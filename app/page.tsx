@@ -26,13 +26,15 @@ export default function Home() {
       <section className="min-h-screen flex items-center pt-20">
         <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
           <div className="max-w-4xl">
-            <p className="text-sm tracking-widest text-muted-foreground uppercase mb-6">Home Zafiro SAS</p>
+            <p className="text-sm tracking-widest text-muted-foreground uppercase mb-6">
+              Home Zafiro SAS
+            </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif leading-[1.1] tracking-tight text-balance">
               Desarrolla una carrera comercial con una marca de prestigio
             </h1>
             <p className="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
-              Formamos y acompañamos asesores independientes en ventas premium a través de un modelo probado basado en
-              liderazgo y resultados.
+              Formamos y acompañamos asesores independientes en ventas premium a
+              través de un modelo probado basado en liderazgo y resultados.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="rounded-full px-8">
@@ -41,7 +43,12 @@ export default function Home() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="rounded-full px-8 bg-transparent">
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="rounded-full px-8 bg-transparent"
+              >
                 <Link href="/oportunidad">Conocer más</Link>
               </Button>
             </div>
@@ -54,13 +61,16 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-sm tracking-widest text-muted-foreground uppercase mb-4">Quiénes Somos</p>
+              <p className="text-sm tracking-widest text-muted-foreground uppercase mb-4">
+                Quiénes Somos
+              </p>
               <h2 className="text-3xl md:text-4xl font-serif leading-tight">
                 Una organización dedicada al desarrollo de asesores comerciales
               </h2>
               <p className="mt-6 text-muted-foreground leading-relaxed">
-                Nuestro objetivo es abrir oportunidades profesionales reales para personas con actitud emprendedora que
-                buscan crecimiento, ingresos competitivos y liderazgo.
+                Nuestro objetivo es abrir oportunidades profesionales reales
+                para personas con actitud emprendedora que buscan crecimiento,
+                ingresos competitivos y liderazgo.
               </p>
               <ul className="mt-8 space-y-3">
                 {features.map((feature) => (
@@ -78,7 +88,11 @@ export default function Home() {
               </Button>
             </div>
             <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-              <img src="/001.jpeg" alt="Equipo profesional" className="w-full h-full object-cover" />
+              <img
+                src="https://raw.githubusercontent.com/estebanrp19/homeZafiroSAS/main/public/001.JPEG"
+                alt="Equipo profesional"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -87,8 +101,12 @@ export default function Home() {
       {/* Testimonials */}
       <section className="py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6">
-          <p className="text-sm tracking-widest text-muted-foreground uppercase mb-4">Testimonios</p>
-          <h2 className="text-3xl md:text-4xl font-serif leading-tight max-w-xl">Historias de quienes ya son parte</h2>
+          <p className="text-sm tracking-widest text-muted-foreground uppercase mb-4">
+            Testimonios
+          </p>
+          <h2 className="text-3xl md:text-4xl font-serif leading-tight max-w-xl">
+            Historias de quienes ya son parte
+          </h2>
 
           <div className="mt-16 grid md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
@@ -96,7 +114,9 @@ export default function Home() {
                 <p className="text-lg leading-relaxed">"{testimonial.quote}"</p>
                 <div className="mt-6">
                   <p className="font-medium">{testimonial.author}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {testimonial.role}
+                  </p>
                 </div>
               </div>
             ))}
@@ -114,7 +134,12 @@ export default function Home() {
             Postúlate y agenda una entrevista con nuestro equipo.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary" className="rounded-full px-8">
+            <Button
+              asChild
+              size="lg"
+              variant="secondary"
+              className="rounded-full px-8"
+            >
               <Link href="/contacto">
                 Aplicar como Distribuidor
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -132,5 +157,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  )
+  );
 }

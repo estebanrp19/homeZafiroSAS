@@ -23,7 +23,7 @@ export function Navbar() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="text-xl font-medium tracking-tight">
-            Home Zafiro
+            Home Zafiro SAS
           </Link>
 
           <nav className="hidden md:flex items-center gap-10">

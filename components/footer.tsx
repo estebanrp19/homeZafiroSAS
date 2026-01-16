@@ -20,7 +20,7 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-12">
           <div className="md:col-span-2">
             <Link href="/" className="text-xl font-medium tracking-tight">
-              Home Zafiro
+              Home Zafiro SAS
             </Link>
             <p className="mt-4 text-sm text-muted-foreground max-w-sm leading-relaxed">
               Distribuidor autorizado de Royal Prestige. Formamos asesores independientes en ventas premium con una marca de

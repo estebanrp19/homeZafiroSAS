@@ -141,7 +141,7 @@ export default function Home() {
               className="rounded-full px-8"
             >
               <Link href="/contacto">
-                Aplicar como Distribuidor
+                Aplicar como Asesor de Ventas
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
